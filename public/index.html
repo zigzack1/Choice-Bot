@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="/public/css/style.css">
   <title>Choice Bot</title>
 </head>
 
@@ -17,8 +17,8 @@
     </header>
   </div>
   <div class="input-wrapper">
-    <input type="text" placeholder="Enter an Option...">
-    <button class="submit-btn"></button>
+    <input type="text" name="text" id="inputField" placeholder="Enter an Option..." >
+    <button onclick="pickOne();" class="submit-btn"></button>
   </div>
   <aside class="choice-menu">
     <header class="choices-header">
@@ -30,7 +30,7 @@
     <header class="outcome-header">
       <h2>Outcome</h2>
     </header>
-    <div class="outcome-menu"></div>
+    <div id="outcomeMenu"></div>
   </div>
   </div>
   <footer class="footer">
@@ -38,7 +38,7 @@
     <div class="social-wrapper"></div>
   </footer>
 
-  <script src="index.js"></script>
+  <script src="/public/javascript/index.js"></script>
 </body>
 
 </html>
