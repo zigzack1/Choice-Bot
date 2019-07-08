@@ -7,3 +7,6 @@ The Choice Bot is a simple application that takes in desired outcomes and make a
 # System Requirements
 
 # Technologies
+- JavaScript
+- HTML
+- CSS 
