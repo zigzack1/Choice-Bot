@@ -39,5 +39,6 @@ function gotChoices() {
 
 
 function pickOne() {
-
+    let choiceArr = [];
+    let choiceList = document.getElementById()
 }
