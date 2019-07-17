@@ -29,7 +29,7 @@
 // console.log(randomChoice(chosenOne));
 
 function pickOne() {
-  let newChoices ="";
-  let choiceBank = document.getElementById('choiceBody'); 
-  
+  let newChoice = document.getElementById("inputField").value;
+  let choiceList = document.getElementById("choiceList");
+  newChoice = newChoice + choiceList + "<button>";
 }
