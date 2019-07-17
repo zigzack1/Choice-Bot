@@ -27,9 +27,10 @@
 // }
 
 // console.log(randomChoice(chosenOne));
+let newChoice = document.getElementById('choiceBody');
+let button = document.createElement('button');
 
 function pickOne() {
-  let newChoices ="";
-  let choiceBank = document.getElementById('choiceBody'); 
-  
+    button.innerHTML = '';
+    newChoice.appendChild(button).value = "";
 }
