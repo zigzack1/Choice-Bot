@@ -35,3 +35,9 @@ function gotChoices() {
     btn.innerHTML = document.getElementById('inputField').value
     document.getElementById('choiceList').appendChild(btn);
 }
+
+
+
+function pickOne() {
+
+}
