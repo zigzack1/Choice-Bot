@@ -1,13 +1,13 @@
-// Create an Array to take in values
+// // Create an Array to take in values
 // const choiceArr = [];
-// Event listener for adding values to the array and adding values to Choices Menu
-// function pickOne() {
+// // Event listener for adding values to the array and adding values to Choices Menu
+// function gotChoices() {
 //   let newChoice = document.getElementById("inputField").value;
 //   choiceArr.push(newChoice);
 
 //   let newVal = "";
 //   for (let i = 0; i < choiceArr.length; i++) {
-//     newVal = newVal + choiceArr[i] + "<br/>";
+//     newVal = newVal + choiceArr[i] + "<button>";
 //   }
 //   document.getElementById("choiceBody").innerHTML = newVal;
 //   document.getElementById("inputField").value = "";
@@ -27,10 +27,11 @@
 // }
 
 // console.log(randomChoice(chosenOne));
-let newChoice = document.getElementById('choiceBody');
-let button = document.createElement('button');
 
-function pickOne() {
-    button.innerHTML = '';
-    newChoice.appendChild(button).value = "";
+
+
+function gotChoices() {
+    let btn = document.createElement('button');
+    btn.innerHTML = document.getElementById('inputField').value
+    document.getElementById('choiceList').appendChild(btn);
 }
