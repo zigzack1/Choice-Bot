@@ -15,14 +15,18 @@ function gotChoices() {
 
   // console.log(choiceArr);
 }
-document.getElementById("choiceList").onclick = function () {
-  let xChoice = document.getElementById("choiceList");
-  xChoice.removeChild(xChoice.childNodes[0]);
-};
+// document.getElementById("choiceList").onclick = function () {
+//   let xChoice = document.getElementById("choiceList");
+//   xChoice.removeChild(xChoice.childNodes[0]);
+// };
 
 // random choice selection and print selection
 function pickOne() {
  let randomChoice = choiceArr[Math.floor(Math.random() * choiceArr.length)];
  
  document.getElementById('outcomeMenu').innerHTML = randomChoice; 
+}
+
+function removeChoice() {
+  
 }
