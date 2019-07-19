@@ -9,7 +9,7 @@ function gotChoices() {
   for (let i = 0; i < choiceArr.length; i++) {
     newVal = newVal + choiceArr[i] + "<br/>";
   }
-  
+
   document.getElementById("choiceList").innerHTML = newVal;
   document.getElementById("inputField").value = "";
 
@@ -22,11 +22,17 @@ function gotChoices() {
 
 // random choice selection and print selection
 function pickOne() {
- let randomChoice = choiceArr[Math.floor(Math.random() * choiceArr.length)];
- 
- document.getElementById('outcomeMenu').innerHTML = randomChoice; 
+
+  if (choiceArr.length > [0]) {
+    let randomChoice = choiceArr[Math.floor(Math.random() * choiceArr.length)];
+    document.getElementById('outcomeMenu').innerHTML = randomChoice;
+  } else {
+    document.getElementById('outcomeMenu').innerHTML = " Oops... Looks like you haven't entered any choices."
+
+  }
+
 }
 
 function removeChoice() {
-  
+
 }
