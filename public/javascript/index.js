@@ -1,5 +1,5 @@
 // Create an Array to take in values
-var choiceArr = [];
+const choiceArr = [];
 // Event listener for adding values to the array and adding values to Choices Menu
 function gotChoices() {
   let newChoice = document.getElementById("inputField").value;
@@ -28,7 +28,6 @@ function pickOne() {
     document.getElementById('outcomeMenu').innerHTML = randomChoice;
   } else {
     document.getElementById('outcomeMenu').innerHTML = " Oops... Looks like you haven't entered any choices."
-
   }
 
 }
